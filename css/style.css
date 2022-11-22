@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    font-size: 0,9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.25rem;
+    margin: 12.5rem;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.p-title {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.p-description {
+    color: rgb(125, 125, 125);
+}
+
+.p-title, .p-description {
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .card {
+        max-width: 12.5rem;
+        padding: .75rem;
+        margin: .8rem;
+        gap: 10px;
+    }
+
+    .p-title {
+        font-size: 1rem;
+    }
+
+    .p-description {
+        font-size: .875rem;
+    }
+}
